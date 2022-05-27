@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SmartCommerce" >
+	<listeners>
+		<listener class-name="com.SmartCommerce.utilities.Reporting"></listener>
+	</listeners>
+
+	<test name="SmartCommerce_Test1" >
+		<parameter name="browser" value="chrome" />
+			<classes>
+				<!-- <class name="com.SmartCommerce.testcases.TC_LoginTest_001" />-->
+				<!--  <class name="com.SmartCommerce.testcases.TC_LoginDDT_002" />-->
+				<class name="com.SmartCommerce.testcases.TC_AddCustomerTest_003" />
+			</classes>
+		</test>
+</suite>
+
+
+<!--Uncomment this if want to select  IE Browser
+
+<test name="SmartCommerce Test2" thread-count="5">
+<parameter name="browser" value="ie" />
+<classes>
+<class name="com.SmartCommerce.testcases.TC_LoginTest_001" />
+</classes>
+</test>
+
+
+Uncomment this if want to select  FireFox Browser
+
+
+<test name="SmartCommerce Test3" thread-count="5">
+<parameter name="browser" value="firefox" />
+<classes>
+<class name="com.SmartCommerce.testcases.TC_LoginTest_001" />
+</classes>
+</test>
+-->
+
